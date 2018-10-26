@@ -1,0 +1,12 @@
+.user-name {
+    display: inline;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #191c3d;
+    border-color: #191c3d;
+}
+
+.list-group-item:first-child, .list-group-item:last-child{
+    border-radius: 0;
+}

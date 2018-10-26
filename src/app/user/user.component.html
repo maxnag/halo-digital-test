@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="user-card">
+                <div class="details">
+                    <div class="user-photo horizontal-center" id="user-photo">
+                        <img [src]="userData.avatar">
+                    </div>
+                    <p id="user-title">{{title}}</p>
+                    <p id="user-value">{{value}}</p>
+                </div>
+                <ul class="values-list horizontal-center" id="values-list">
+                    <li data-title="Hi, My name is" data-label="name" (mouseover)="changeData($event, 'name')" class="active"></li>
+                    <li data-title="My email address is" data-label="email" data-caps="false" (mouseover)="changeData($event, 'email')"></li>
+                    <li data-title="My birthday is" data-label="birthday" (mouseover)="changeData($event, 'birthday')"></li>
+                    <li data-title="My address is" data-label="location" (mouseover)="changeData($event, 'location')"></li>
+                    <li data-title="My phone number is" data-label="phone" (mouseover)="changeData($event, 'phone')"></li>
+                    <li data-title="My password is" data-label="pass" data-caps="false" (mouseover)="changeData($event, 'pass')"></li>
+                </ul>
+            </div>
+            <vote-cmp></vote-cmp>
+        </div>
+    </div>
+</div>

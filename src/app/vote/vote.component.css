@@ -1,0 +1,11 @@
+.vote-card {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    overflow: hidden;
+    text-align: center;
+    margin-top: 5px;
+}

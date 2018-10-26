@@ -1,0 +1,16 @@
+
+<div class="sidebar-wrapper">
+    <div class="logo">
+        <a href="https://www.halo-digital.com" class="simple-text">
+            Halo-Digital<br />Test Work
+        </a>
+    </div>
+
+
+    <div class="list-group">
+        <a *ngFor="let userData of usersData" [routerLink]="['/user', userData.id]" routerLinkActive="active" class="list-group-item list-group-item-action" (click)="resetActiveClass($event)">
+            <div class="user-name">{{userData.name}}</div>
+            <span class="badge badge-primary badge-pill">{{userData.vote || ''}}</span>
+        </a>
+    </div>
+</div>
